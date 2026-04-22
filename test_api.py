@@ -13,7 +13,7 @@ def test_upload_with_file():
     """Test uploading with actual file"""
     print("\n1. Testing upload with file...")
     
-    # You can create a dummy image or use an existing one
+   
     files = {'photo': open('test_image.jpg', 'rb')} if False else {}
     
     data = {
@@ -31,7 +31,6 @@ def test_upload_base64():
     """Test uploading with base64 encoded image"""
     print("\n2. Testing upload with base64...")
     
-    # Create a small dummy image (1x1 red pixel PNG)
     dummy_image_base64 = "iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mP8z8DwHwAFBQIAX8jx0gAAAABJRU5ErkJggg=="
     
     data = {
